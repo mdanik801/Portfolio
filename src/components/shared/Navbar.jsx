@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import download from "../../assets/images/download.png";
 import VanillaTilt from "vanilla-tilt";
 
+import resume from "../../assets/images/Anik Resume.pdf";
+
 export default function Navbar() {
    const navbtn = [
       { id: 1, name: "HOME", url: "home" },
@@ -54,9 +56,8 @@ export default function Navbar() {
          </ul>{" "}
          <a
             className=" hidden   lg:flex md:flex  justify-center items-center border-2   hover:bg-gray-800 border-green-700 p-0.5 mx-2 2xl:w-[35vh] lg:w-[18vh] md:w-[14vh] rounded-3xl 2xl:h-[9vh] lg:h-[6vh] md:h-[4vh] 2xl:text-[1.3rem] text-[0.8rem]  font-bold font-Nunito duration-300"
-            href=""
-            download="resume.pdf"
-            target="_blank"
+            href={resume}
+            download="Anik Resume.pdf"
             rel="noopener noreferrer">
             {" "}
             <img className="2xl:w-[4vh] md:w-[3vh] w-[4vh] mx-2" src={download} alt="" />

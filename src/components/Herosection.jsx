@@ -1,6 +1,8 @@
 import heroimg from "../assets/images/heroimg.gif";
 import { TypeAnimation } from "react-type-animation";
 
+import resume from "../assets/images/Anik Resume.pdf";
+
 import giticon from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
 import whatsapp from "../assets/images/whatsapp.png";
@@ -87,9 +89,8 @@ export default function Herosection() {
                <div className=" xl:my-[5vh] my-[2vh] flex  justify-between xl:w-[38vh] lg:w-[38vh]  md:w-[25.5vh] w-[31vh] ">
                   <a
                      className="  flex  justify-center items-center border-2 bg-slate-950  hover:bg-gray-800 border-green-700 p-0.5 xl:w-[18vh] lg:w-[18vh] md:w-[12vh] w-[15vh] rounded-3xl xl:h-[6vh] lg:h-[6vh] md:h-[4vh] h-[5vh] xl:text-[0.8rem] text-[0.7rem]  font-bold font-Nunito duration-300"
-                     href=""
-                     download="resume.pdf"
-                     target="_blank"
+                     href={resume}
+                     download="Anik Resume.pdf"
                      rel="noopener noreferrer">
                      <img
                         className=" xl:w-[4vh] lg:w-[4vh] md:w-[2.5vh] w-[3vh] mx-2"
@@ -100,7 +101,7 @@ export default function Herosection() {
                   </a>
 
                   <a
-                     href=""
+                     href="#contact"
                      className="animate-pulse hover:animate-none flex  justify-center items-center border-2 bg-slate-950  hover:bg-gray-800  p-0.5 xl:w-[18vh] lg:w-[18vh] md:w-[13vh] w-[15vh] rounded-3xl xl:h-[6vh] lg:h-[6vh] md:h-[4vh] h-[5vh] lg:text-[0.8rem] text-[0.7rem]  font-bold font-Nunito duration-300">
                      Contact
                   </a>
