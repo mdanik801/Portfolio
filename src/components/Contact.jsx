@@ -164,7 +164,7 @@ export default function Contact() {
                         {" "}
                         <button className={style.sendbtn}>Send Massage</button>
                         <span className=" text-green-600 text-shadow-lg font-Nunito font-bold lg:text-[1rem] text-[0.8rem]">
-                           {suess}Email sent successfully!
+                           {suess}
                         </span>
                      </>
                   )}{" "}
