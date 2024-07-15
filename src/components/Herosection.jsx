@@ -15,7 +15,7 @@ const style = {
    page_benar_box: `xl:relative md:relative  flex xl:flex-row md:flex-row  flex-col xl:justify-start md:justify-start justify-center items-center`,
    benar: `2xl:w-[130vh] xl:w-[100vh] 2xl:h-[80vh] xl:h-[68vh] l lg:w-[34vh] lg:h-[25vh]   md:w-[34vh] md:h-[25vh] md:my-0 lg:rounded-r-3xl md:rounded-r-3xl md:shadow-black   shadow-lg w-full h-[30vh]`,
    detail_body: `xl:absolute  md:absolute 2xl:w-[130vh] xl:w-[100vh] 2xl:h-[65vh] xl:h-[54vh] lg:w-[75vh] lg:h-[40vh] md:w-[37vh] md:h-[20vh] w-full h-[40vh] 2xl:ml-[115vh] xl:ml-[90vh] lg:ml-[75vh] md:ml-[29vh] bg-gray-900 shadow-black shadow-lg xl:rounded-3xl md:rounded-3xl xl:p-[15vh] lg:p-[5vh] md:p-[2.8vh] p-[2vh] md:animate-float`,
-   contact_icon: `border-2 border-green-700 xl:w-[4vh] lg:w-[3.5vh] md:w-[3vh] w-[4.5vh] bg-gray-400 hover:bg-white  mx-1 rounded-full duration-300 animate-pulse hover:animate-none shadow-2xl shadow-black`,
+   contact_icon: `border-2 border-green-700 xl:w-[4vh] lg:w-[3.5vh] md:w-[3vh] w-[4.5vh] bg-gray-300 hover:bg-white  mx-1 rounded-full duration-300 animate-pulse hover:animate-none shadow-2xl shadow-black`,
 };
 
 export default function Herosection() {
