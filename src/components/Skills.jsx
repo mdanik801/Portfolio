@@ -11,8 +11,8 @@ const style = {
    skill_itemsection: ` h-auto  mt-[2vh] flex justify-start items-start`,
    skill_name: `flex  flex-col items-start w-auto   `,
    skill_name_h: `w-[20vh] lg:mx-2 mx-1 text-white font-Nunito lg:text-[1rem] text-[0.8rem] text-shadow-lg  `,
-   skill_detail_box: `flex flex-wrap  justify-start items-center mt-[0.5vh]`,
-   skill_btn: `lg:text-[0.9rem] text-[0.4rem] text-shadow-lg p-1 font-Nunito  text-slate-300 flex justify-between items-center rounded-lg bg-slate-700 hover:bg-slate-800 duration-200 m-[0.6vh] border border-green-400 shadow-md shadow-black`,
+   skill_detail_box: `flex flex-wrap  justify-start items-center  mt-[0.5vh]`,
+   skill_btn: `lg:text-[0.9rem] text-[0.4rem] lg:w-auto w-[10vh] text-shadow-lg p-1 font-Nunito  text-slate-300 flex justify-between items-center rounded-lg bg-slate-700 hover:bg-slate-800 duration-200 m-[0.6vh] border border-green-400 shadow-md shadow-black`,
    skill_icon: ` lg:w-[4vh] w-[3vh] mr-1`,
 };
 
