@@ -17,11 +17,11 @@ const style = {
    pagetitle: ` m-[2vh]  lg:text-[2.5rem] text-[2rem] text-shadow-xl font-Acme font-bold animate-pulse`,
    boxsection: `p-2 lg:p-10 flex lg:flex-row flex-col items-center justify-center `,
    contactbox: `lg:w-[50%] w-full p-2 font-Nunito`,
-   contacticon: `animate-pulse xl:w-[4.5vh] lg:w-[4vh] md:w-[4vh] w-[4.5vh] p-0.5 mx-1 border-2 border-green-700 bg-gray-600  shadow-black shadow-lg hover:bg-white rounded-full duration-300"`,
+   contacticon: `animate-pulse xl:w-[4.5vh] lg:w-[4vh] md:w-[4vh] w-[4.5vh] p-0.5 mx-1 border-2 border-green-700 bg-gray-400  shadow-black shadow-lg hover:bg-white rounded-full duration-300"`,
    formbox: `lg:w-[50%] w-full p-2`,
    inputbox: `w-full h-[7vh] lg:m-3 m-2   p-3 rounded-xl font-Nunito  bg-gray-900 shadow-lg shadow-black  `,
    sendbtn: ` m-5 p-3  font-Nunito font-bold text-white text-shadow-lg rounded-full bg-gray-950  shadow-lg  shadow-black hover:bg-gray-900 hover:text-slate-400 duration-200 `,
-   lodingbtn: `animate-pulse  m-5 p-3  font-Nunito font-bold text-white text-shadow-lg rounded-full bg-gray-950  shadow-lg  shadow-green-700 hover:bg-gray-900 hover:text-slate-400 duration-200 `,
+   lodingbtn: `animate-pulse  m-5 p-3  font-Nunito font-bold text-white text-shadow-lg rounded-full bg-gray-950  shadow-lg  shadow-green-700 hover:bg-gray-900 hover:animate-none hover:text-slate-400 duration-200 `,
 };
 
 export default function Contact() {
