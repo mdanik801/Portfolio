@@ -110,7 +110,7 @@ export default function Herosection() {
                   {contact_button.map((btn) => (
                      <a href={btn.url}>
                         <img
-                           className=" lgw-[4vh] w-[5vh] bg-gray-600 hover:bg-white lgmx-1 mx-2 rounded-full duration-300 animate-pulse  shadow-2xl shadow-black"
+                           className=" lgw-[4vh] w-[5vh] bg-gray-300 hover:bg-white lgmx-1 mx-2 rounded-full duration-300 animate-pulse  shadow-2xl shadow-black"
                            src={btn.icon}
                            alt=""
                         />
