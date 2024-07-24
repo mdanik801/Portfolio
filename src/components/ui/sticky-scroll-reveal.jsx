@@ -80,9 +80,12 @@ export const StickyScroll = ({ content, contentClassName }) => {
                               Tecnology :
                            </h1>
                            {item.technology.map((tec) => (
-                              <button className=" m-0.5 border p-1  rounded-lg bg-green-700 lg:text-[0.7rem] text-[0.6rem] text-white text-shadow-md shadow shadow-black">
-                                 {tec}
-                              </button>
+                              <>
+                                 {" "}
+                                 <button className=" m-0.5 border p-1  rounded-lg bg-green-700 lg:text-[0.7rem] text-[0.6rem] text-white text-shadow-md shadow shadow-black">
+                                    {tec}
+                                 </button>
+                              </>
                            ))}
                         </div>
                      </motion.p>

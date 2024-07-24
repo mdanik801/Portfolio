@@ -49,9 +49,12 @@ export default function Navbar() {
          }`}>
          <ul className=" flex items-center justify-center  ">
             {navbtn.map((btn) => (
-               <li className=" lg:mx-2 mx-0.5   lg:p-1 p-0.5 2xl:text-[1.3rem] lg:text-[1rem] md:text-[0.9rem] text-[0.5rem] font-Nunito font-bold  hover:text-green-700 duration-300 text-shadow-lg ">
-                  <a href={`#${btn.url}`}>{btn.name}</a>
-               </li>
+               <>
+                  {" "}
+                  <li className=" lg:mx-2 mx-0.5   lg:p-1 p-0.5 2xl:text-[1.3rem] lg:text-[1rem] md:text-[0.9rem] text-[0.5rem] font-Nunito font-bold  hover:text-green-700 duration-300 text-shadow-lg ">
+                     <a href={`#${btn.url}`}>{btn.name}</a>
+                  </li>
+               </>
             ))}
          </ul>{" "}
          <a

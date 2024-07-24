@@ -58,9 +58,12 @@ export default function Herosection() {
                   </h1>{" "}
                   <div className=" hidden xl:justify-start md:flex mx-1 ">
                      {contact_button.map((btn) => (
-                        <a href={btn.url} target="_blank">
-                           <img className={style.contact_icon} src={btn.icon} alt="" />
-                        </a>
+                        <>
+                           {" "}
+                           <a href={btn.url} target="_blank">
+                              <img className={style.contact_icon} src={btn.icon} alt="" />
+                           </a>
+                        </>
                      ))}
                   </div>
                </div>
@@ -108,13 +111,16 @@ export default function Herosection() {
                </div>{" "}
                <div className="md:hidden  flex justify-center mx-3 mt-[8vh]">
                   {contact_button.map((btn) => (
-                     <a href={btn.url}>
-                        <img
-                           className=" lgw-[4vh] w-[5vh] bg-gray-300 hover:bg-white lgmx-1 mx-2 rounded-full duration-300 animate-pulse  shadow-2xl shadow-black"
-                           src={btn.icon}
-                           alt=""
-                        />
-                     </a>
+                     <>
+                        {" "}
+                        <a href={btn.url}>
+                           <img
+                              className=" lgw-[4vh] w-[5vh] bg-gray-300 hover:bg-white lgmx-1 mx-2 rounded-full duration-300 animate-pulse  shadow-2xl shadow-black"
+                              src={btn.icon}
+                              alt=""
+                           />
+                        </a>
+                     </>
                   ))}
                </div>
             </div>

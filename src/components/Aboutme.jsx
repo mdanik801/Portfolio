@@ -105,20 +105,26 @@ export default function Aboutme() {
                      Skilled in
                      <ul className=" text-white text-shadow-xl">
                         {skilld.map((skill) => (
-                           <li>
+                           <>
                               {" "}
-                              {skill.name}
-                              <span className=" text-slate-400"> {skill.p}</span>
-                           </li>
+                              <li>
+                                 {" "}
+                                 {skill.name}
+                                 <span className=" text-slate-400"> {skill.p}</span>
+                              </li>
+                           </>
                         ))}
                      </ul>
                   </h1>
                </p>
                <div className="flex  mt-6">
                   {contact_button.map((btn) => (
-                     <a data-aos="flip-left" href={btn.url} target="_blank" className=" ">
-                        <img className={style.contact_btn} src={btn.icon} alt="" />
-                     </a>
+                     <>
+                        {" "}
+                        <a data-aos="flip-left" href={btn.url} target="_blank" className=" ">
+                           <img className={style.contact_btn} src={btn.icon} alt="" />
+                        </a>
+                     </>
                   ))}
                </div>
             </div>

@@ -117,20 +117,23 @@ export default function Contact() {
                </p>
                <ul className=" my-5">
                   {contact_button.map((btn) => (
-                     <li className=" flex my-3 cursor-pointer ">
+                     <>
                         {" "}
-                        <a data-aos="fade-down" href={btn.url}>
-                           <img className={style.contacticon} src={btn.icon} alt="" />
-                        </a>
-                        <a
-                           data-aos="fade-down"
-                           href={btn.url}
-                           target="_blank"
-                           className="   hover:text-white text-shadow-xl mx-2 ">
+                        <li className=" flex my-3 cursor-pointer ">
                            {" "}
-                           {btn.name}
-                        </a>
-                     </li>
+                           <a data-aos="fade-down" href={btn.url}>
+                              <img className={style.contacticon} src={btn.icon} alt="" />
+                           </a>
+                           <a
+                              data-aos="fade-down"
+                              href={btn.url}
+                              target="_blank"
+                              className="   hover:text-white text-shadow-xl mx-2 ">
+                              {" "}
+                              {btn.name}
+                           </a>
+                        </li>
+                     </>
                   ))}
                </ul>
             </div>

@@ -45,24 +45,30 @@ export default function Skills() {
             </div>
             <div className=" w-full mt-10 mb-5">
                {skills.map((details) => (
-                  <div className={style.skill_itemsection}>
-                     <div data-aos="fade-down" className={style.skill_name}>
-                        <span className={style.skill_name_h}>{details.skillname}</span>{" "}
-                        <div className=" z-20 ml-[-1.1vh] mt-[-1.1vh] lg:w-full flex items-center">
-                           <div className=" w-3 h-3 bg-green-700 rounded-full"></div>
-                           <div className=" h-0.5 lg:w-[16vh] w-[12vh] bg-green-700 "></div>
+                  <>
+                     {" "}
+                     <div className={style.skill_itemsection}>
+                        <div data-aos="fade-down" className={style.skill_name}>
+                           <span className={style.skill_name_h}>{details.skillname}</span>{" "}
+                           <div className=" z-20 ml-[-1.1vh] mt-[-1.1vh] lg:w-full flex items-center">
+                              <div className=" w-3 h-3 bg-green-700 rounded-full"></div>
+                              <div className=" h-0.5 lg:w-[16vh] w-[12vh] bg-green-700 "></div>
+                           </div>
+                        </div>
+
+                        <div className={style.skill_detail_box}>
+                           {details.skillitem.map((info) => (
+                              <>
+                                 {" "}
+                                 <button data-aos="fade-down" className={style.skill_btn}>
+                                    <img className={style.skill_icon} src={info.img} alt="" />
+                                    <span className="mr-1"> {info.name}</span>
+                                 </button>
+                              </>
+                           ))}
                         </div>
                      </div>
-
-                     <div className={style.skill_detail_box}>
-                        {details.skillitem.map((info) => (
-                           <button data-aos="fade-down" className={style.skill_btn}>
-                              <img className={style.skill_icon} src={info.img} alt="" />
-                              <span className="mr-1"> {info.name}</span>
-                           </button>
-                        ))}
-                     </div>
-                  </div>
+                  </>
                ))}
             </div>
          </div>
