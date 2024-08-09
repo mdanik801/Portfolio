@@ -11,6 +11,7 @@ import whatsapp from "../assets/images/whatsapp.png";
 import facebook from "../assets/images/facebook.png";
 import location from "../assets/images/location.png";
 import gmail from "../assets/images/gmail.png";
+import VisitorCounter from "./shared/Visitorcouner";
 
 export default function Home() {
    const contact_button = [
@@ -60,6 +61,7 @@ export default function Home() {
                   {" "}
                   © Md Aulad Hossain <span className=" text-green-700  ">Anik</span>
                </span>
+               <VisitorCounter />
                <ul className=" my-5 flex">
                   {contact_button.map((btn) => (
                      <>
