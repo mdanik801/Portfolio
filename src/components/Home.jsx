@@ -57,11 +57,14 @@ export default function Home() {
             <Skills />
             <Contact />
             <div className=" bg-slate-700 w-full h-[8vh] lg:rounded-b-3xl flex justify-between items-center p-6">
-               <span className=" animate-bounce font-Acme lg:text-[1.2rem] text-[0.9rem] text-shadow-xl">
+               <div className=" lg:flex lg:items-center">
                   {" "}
-                  © Md Aulad Hossain <span className=" text-green-700  ">Anik</span>
-               </span>
-               <VisitorCounter />
+                  <div className=" animate-pulse font-Acme lg:text-[1.2rem] text-[0.9rem] text-shadow-xl lg:mr-3">
+                     {" "}
+                     © Md Aulad Hossain <span className=" text-green-700  ">Anik</span>
+                  </div>
+                  <VisitorCounter />
+               </div>
                <ul className=" my-5 flex">
                   {contact_button.map((btn) => (
                      <>

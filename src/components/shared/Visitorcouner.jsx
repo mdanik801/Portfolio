@@ -27,9 +27,9 @@ const VisitorCount = () => {
 
    return (
       <div>
-         <span className=" animate-bounce font-Acme lg:text-[0.9rem] text-[0.7rem] text-shadow-xl">
+         <div className=" animate-pulse font-Acme text-[1rem] text-shadow-xl lg:mr-3">
             Visited <span className=" text-green-700 font-bold"> {count} +</span>
-         </span>
+         </div>
       </div>
    );
 };
