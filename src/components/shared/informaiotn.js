@@ -1,7 +1,30 @@
 import dataanlyticimg from "../../assets/project Image/DATA ANALYTICS.png";
 import ecom from "../../assets/project Image/chepshop.png";
+import qrgenimg from "../../assets/project Image/qrgenimg.png";
 
 export const content = [
+   {
+      title: "DATA ANALYTICS",
+      description:
+         "A QR code generator and scanner is a versatile tool that allows users to create and read QR codes easily. It generates QR codes for URLs, text, or other data, enabling quick sharing and access via smartphones or other devices. The scanner feature decodes QR codes instantly, retrieving embedded information for seamless interaction, making it ideal for marketing, inventory management, and everyday use.",
+      technology: [
+         "HTML",
+         "CSS",
+         "REACT JS",
+         "TALWIND CSS",
+         "REACT-ROUTER-DOM",
+         "QRCODE-REACT",
+         "Html5-QRCode",
+      ],
+      sourcecode: [
+         {
+            livelink: "https://qrgenaretor.netlify.app/",
+            frontend: "https://github.com/mdanik801/qrcodegenaretor",
+            backend: "",
+         },
+      ],
+      content: qrgenimg,
+   },
    {
       title: "DATA ANALYTICS",
       description:
