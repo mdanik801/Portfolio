@@ -29,6 +29,7 @@ export default {
          },
          backgroundImage: {
             "custom-image": "url('./src/assets/images/erth.jpg')",
+            "custom-bg": "url('./src/assets/images/bgimg.jpg')",
          },
       },
    },

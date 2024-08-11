@@ -8,12 +8,13 @@ import linkedin from "../assets/images/linkedin.png";
 import whatsapp from "../assets/images/whatsapp.png";
 import facebook from "../assets/images/facebook.png";
 import download from "../assets/images/download.png";
+import ComputersCanvas from "./shared/Computers";
 
 const style = {
    page_body: ` w-full 2xl:h-[110vh] lg:h-[90vh] flex flex-col  justify-center  lg:justify-start xl:mb-8  xl:mt-2 lg:mt-[4vh]  mt-[5vh]`,
    page_title: `xl:m-[2vh] m-[1vh] xl:my-[5vh] mt-[2vh]  font-bold xl:text-[1.5rem] lg:text-[1.5rem] text-[1.2rem] font-Nunito text-shadow-lg`,
    page_benar_box: `xl:relative md:relative  flex xl:flex-row md:flex-row  flex-col xl:justify-start md:justify-start justify-center items-center`,
-   benar: `2xl:w-[130vh] xl:w-[100vh] 2xl:h-[80vh] xl:h-[68vh] l lg:w-[34vh] lg:h-[25vh]   md:w-[34vh] md:h-[25vh] md:my-0 lg:rounded-r-3xl md:rounded-r-3xl md:shadow-black   shadow-lg w-full h-[30vh]`,
+   benar: `bg-custom-bg bg-cover  2xl:w-[130vh] xl:w-[100vh] 2xl:h-[80vh] xl:h-[68vh] l lg:w-[34vh] lg:h-[25vh]   md:w-[34vh] md:h-[25vh] md:my-0 lg:rounded-r-3xl md:rounded-r-3xl md:shadow-black   shadow-lg w-full h-[30vh]`,
    detail_body: `xl:absolute  md:absolute 2xl:w-[130vh] xl:w-[100vh] 2xl:h-[65vh] xl:h-[54vh] lg:w-[75vh] lg:h-[40vh] md:w-[37vh] md:h-[20vh] w-full h-[40vh] 2xl:ml-[115vh] xl:ml-[90vh] lg:ml-[75vh] md:ml-[29vh] bg-gray-900 shadow-black shadow-lg xl:rounded-3xl md:rounded-3xl xl:p-[15vh] lg:p-[5vh] md:p-[2.8vh] p-[2vh] md:animate-float`,
    contact_icon: `border-2 border-green-700 xl:w-[4vh] lg:w-[3.5vh] md:w-[3vh] w-[4.5vh] bg-gray-300 hover:bg-white  mx-1 rounded-full duration-300 animate-pulse hover:animate-none shadow-2xl shadow-black`,
 };
@@ -47,9 +48,12 @@ export default function Herosection() {
             MD AULAD HOSSAIN <span className=" text-green-700 font-bold font-Acme ">ANIK</span>
          </span>{" "}
          <div className={style.page_benar_box}>
-            <img className={style.benar} src={heroimg} alt="" />
+            {/* <img className={style.benar} src={heroimg} alt="" /> */}
+            <div className={style.benar}>
+               <ComputersCanvas />
+            </div>
             <div className={style.detail_body}>
-               <span className=" font-Nunito 2xl:text-[1.5rem] xl:text-[1rem] lg:text-[1rem] md:text-[0.7rem]">
+               <span className=" font-Nunito 2xl:text-[1.5rem] xl:text-[1rem] lg:text-[1rem] md:text-[0.7rem] ">
                   Hey there, my name is
                </span>
                <div className="flex md:flex-row flex-col md:items-center justify-start">
