@@ -3,6 +3,8 @@ import { TypeAnimation } from "react-type-animation";
 
 import resume from "../assets/images/Anik Resume.pdf";
 
+import bgimg from "../assets/images/bgimg1.jpg";
+
 import giticon from "../assets/images/github.png";
 import linkedin from "../assets/images/linkedin.png";
 import whatsapp from "../assets/images/whatsapp.png";
@@ -51,7 +53,9 @@ export default function Herosection() {
             {/* <img className={style.benar} src={heroimg} alt="" /> */}
             <div className={style.benar}>
                <ComputersCanvas />
+               {/* <img src={bgimg} alt="" /> */}
             </div>
+
             <div className={style.detail_body}>
                <span className=" font-Nunito 2xl:text-[1.5rem] xl:text-[1rem] lg:text-[1rem] md:text-[0.7rem] ">
                   Hey there, my name is
