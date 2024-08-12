@@ -117,7 +117,7 @@ import problem from "../../assets/skill icons/problem-solving.png";
 import dbicon from "../../assets/skill icons/dbicon.png";
 import Aceternity from "../../assets/skill icons/Aceternity.png";
 import emailjs from "../../assets/skill icons/emailjs.png";
-import DERI from "../../assets/skill icons/DERI.png";
+import threejs from "../../assets/skill icons/threejs.png";
 
 // ------------------------------------------------------------------------------------
 export const skillsInfo = [
@@ -168,7 +168,7 @@ export const skillsInfo = [
          { id: 4, name: "REACT HOCK FOMR ", img: reacthockform },
          { id: 5, name: "KEEP REACT UI", img: keepreacticon },
          { id: 6, name: "ACETERNITY UI", img: Aceternity },
-         { id: 6, name: "REACT THREE FIBER", img: DERI },
+         { id: 6, name: " THREE JS", img: threejs },
       ],
    },
    {

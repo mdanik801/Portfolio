@@ -46,7 +46,7 @@ export const StickyScroll = ({ content, contentClassName }) => {
                {content.map((item, index) => (
                   <div
                      key={item.title + index}
-                     className="my-3 mx-2 lg:mx-[2vh]  flex flex-col justify-center  border xl:w-auto lg:w-[85vh] lg:h-[63vh] md:w-[35vh] w-[40vh] h-auto p-4 shadow-md shadow-black border-green-700 rounded-xl ">
+                     className="my-3 mx-2 lg:mx-[2vh]  flex flex-col justify-center  border xl:w-auto lg:w-[85vh] lg:h-[63vh] md:w-[60vh] w-[40vh] h-auto p-4 shadow-md shadow-black border-green-700 rounded-xl ">
                      <motion.div>
                         <img
                            src={item.content}
@@ -146,7 +146,7 @@ export const StickyScroll = ({ content, contentClassName }) => {
                contentClassName
             )}>
             <img
-               className=" w-full h-60 shadow-md shadow-black rounded-md "
+               className=" w-[80vh] h-60 shadow-md shadow-black rounded-md "
                src={content[activeCard].content ?? null}
                alt=""
             />
