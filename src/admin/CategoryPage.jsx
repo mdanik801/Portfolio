@@ -75,12 +75,12 @@ export default function CategoryPage() {
    const getTypeLabel = (type) => FIELD_TYPES.find((t) => t.value === type)?.label || type;
 
    return (
-      <div className="max-w-4xl mx-auto mt-10 px-4 pb-20">
-         <h2 className="text-3xl font-bold mb-6 text-center">
+      <div className="w-full max-w-4xl mx-auto mt-6 px-4 pb-20 overflow-x-hidden">
+         <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
             <span className="text-[#22c55e]">{editingId ? "Edit" : "Create"}</span> Category
          </h2>
 
-         <div className="bg-[#161b22]/70 backdrop-blur-md border border-white/5 rounded-2xl p-8 shadow-2xl border-t-4 border-[#22c55e] space-y-6 mb-10">
+         <div className="bg-[#161b22]/70 backdrop-blur-md border border-white/5 rounded-2xl p-4 sm:p-8 shadow-2xl border-t-4 border-[#22c55e] space-y-6 mb-10">
             <form onSubmit={handleSubmit} className="space-y-6">
                <div>
                   <label className="block text-gray-400 mb-2">Category Name *</label>
@@ -95,7 +95,7 @@ export default function CategoryPage() {
 
                <div>
                   <label className="block text-gray-400 mb-2">Add Fields</label>
-                  <div className="bg-[#0b0f1a] border border-white/10 rounded-xl p-4 space-y-3">
+                  <div className="bg-[#0b0f1a] border border-white/10 rounded-xl p-3 sm:p-4 space-y-3">
                      <input
                         type="text"
                         placeholder="Field label (e.g. GitHub Link)"
@@ -109,34 +109,39 @@ export default function CategoryPage() {
                         }}
                         className="w-full bg-[#161b22] border border-white/10 rounded-lg px-4 py-2 text-white"
                      />
-                     <div className="flex gap-3 items-center">
+
+                     {/* Mobile: stack, Desktop: row */}
+                     <div className="flex flex-col sm:flex-row gap-3">
                         <select
                            value={newField.type}
                            onChange={(e) => setNewField({ ...newField, type: e.target.value })}
-                           className="flex-1 bg-[#161b22] border border-white/10 rounded-lg px-3 py-2 text-white">
+                           className="w-full sm:flex-1 bg-[#161b22] border border-white/10 rounded-lg px-3 py-2 text-white">
                            {FIELD_TYPES.map((t) => (
                               <option key={t.value} value={t.value}>
                                  {t.label}
                               </option>
                            ))}
                         </select>
-                        <label className="flex items-center gap-2 text-gray-400 text-sm cursor-pointer">
-                           <input
-                              type="checkbox"
-                              checked={newField.required}
-                              onChange={(e) =>
-                                 setNewField({ ...newField, required: e.target.checked })
-                              }
-                              className="accent-[#22c55e] w-4 h-4"
-                           />
-                           Required
-                        </label>
-                        <button
-                           type="button"
-                           onClick={addField}
-                           className="px-5 py-2 bg-[#22c55e] text-black rounded-lg font-bold hover:bg-white transition">
-                           + Add
-                        </button>
+
+                        <div className="flex items-center justify-between sm:justify-start gap-3">
+                           <label className="flex items-center gap-2 text-gray-400 text-sm cursor-pointer">
+                              <input
+                                 type="checkbox"
+                                 checked={newField.required}
+                                 onChange={(e) =>
+                                    setNewField({ ...newField, required: e.target.checked })
+                                 }
+                                 className="accent-[#22c55e] w-4 h-4"
+                              />
+                              Required
+                           </label>
+                           <button
+                              type="button"
+                              onClick={addField}
+                              className="px-5 py-2 bg-[#22c55e] text-black rounded-lg font-bold hover:bg-white transition">
+                              + Add
+                           </button>
+                        </div>
                      </div>
                   </div>
 
@@ -144,14 +149,14 @@ export default function CategoryPage() {
                      {formData.fields.map((f, i) => (
                         <div
                            key={i}
-                           className="flex items-center justify-between bg-[#0b0f1a] border border-white/10 rounded-lg px-4 py-2">
-                           <div className="flex items-center gap-3">
-                              <span className="text-white font-medium">{f.label}</span>
-                              <span className="text-xs bg-[#22c55e]/10 text-[#22c55e] border border-[#22c55e]/20 rounded-full px-2 py-0.5">
+                           className="flex items-center justify-between bg-[#0b0f1a] border border-white/10 rounded-lg px-3 py-2 gap-2">
+                           <div className="flex flex-wrap items-center gap-2 flex-1 min-w-0">
+                              <span className="text-white font-medium truncate">{f.label}</span>
+                              <span className="text-xs bg-[#22c55e]/10 text-[#22c55e] border border-[#22c55e]/20 rounded-full px-2 py-0.5 whitespace-nowrap">
                                  {getTypeLabel(f.type)}
                               </span>
                               {f.required && (
-                                 <span className="text-xs bg-red-500/10 text-red-400 border border-red-400/20 rounded-full px-2 py-0.5">
+                                 <span className="text-xs bg-red-500/10 text-red-400 border border-red-400/20 rounded-full px-2 py-0.5 whitespace-nowrap">
                                     Required
                                  </span>
                               )}
@@ -159,7 +164,7 @@ export default function CategoryPage() {
                            <button
                               type="button"
                               onClick={() => removeField(i)}
-                              className="text-red-400 hover:text-red-300 transition font-bold">
+                              className="text-red-400 hover:text-red-300 transition font-bold flex-shrink-0">
                               ✕
                            </button>
                         </div>
@@ -167,7 +172,7 @@ export default function CategoryPage() {
                   </div>
                </div>
 
-               <div className="flex justify-end gap-4 pt-4 border-t border-white/10">
+               <div className="flex flex-col sm:flex-row justify-end gap-3 pt-4 border-t border-white/10">
                   {editingId && (
                      <button
                         type="button"
@@ -175,13 +180,13 @@ export default function CategoryPage() {
                            setEditingId(null);
                            setFormData({ name: "", fields: [] });
                         }}
-                        className="px-6 py-2.5 rounded-lg bg-gray-700 hover:bg-gray-600 text-white font-medium transition">
+                        className="w-full sm:w-auto px-6 py-2.5 rounded-lg bg-gray-700 hover:bg-gray-600 text-white font-medium transition">
                         Cancel
                      </button>
                   )}
                   <button
                      type="submit"
-                     className="px-8 py-2.5 rounded-lg bg-[#22c55e] text-black font-bold hover:bg-white transition shadow-lg">
+                     className="w-full sm:w-auto px-8 py-2.5 rounded-lg bg-[#22c55e] text-black font-bold hover:bg-white transition shadow-lg">
                      {editingId ? "Update Category" : "Create Category"}
                   </button>
                </div>
@@ -198,22 +203,22 @@ export default function CategoryPage() {
                {categories.map((cat) => (
                   <div
                      key={cat._id}
-                     className="bg-[#161b22] border border-white/10 rounded-xl px-6 py-4">
-                     <div className="flex items-center justify-between">
-                        <div>
-                           <p className="text-white font-semibold">{cat.name}</p>
+                     className="bg-[#161b22] border border-white/10 rounded-xl px-4 sm:px-6 py-4">
+                     <div className="flex items-start sm:items-center justify-between gap-3">
+                        <div className="min-w-0">
+                           <p className="text-white font-semibold truncate">{cat.name}</p>
                            <p className="text-gray-500 text-sm">{cat.fields?.length || 0} fields</p>
                         </div>
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 flex-shrink-0">
                            <button
                               onClick={() => handleEdit(cat)}
-                              className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm transition">
-                              ✏️ Edit
+                              className="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm transition">
+                              ✏️
                            </button>
                            <button
                               onClick={() => handleDelete(cat._id)}
-                              className="px-4 py-2 rounded-lg bg-red-700 hover:bg-red-600 text-white text-sm transition">
-                              🗑️ Delete
+                              className="px-3 py-1.5 rounded-lg bg-red-700 hover:bg-red-600 text-white text-sm transition">
+                              🗑️
                            </button>
                         </div>
                      </div>
@@ -222,7 +227,7 @@ export default function CategoryPage() {
                            {cat.fields.map((f, i) => (
                               <span
                                  key={i}
-                                 className="text-xs bg-[#22c55e]/10 text-[#22c55e] border border-[#22c55e]/20 rounded-full px-3 py-1">
+                                 className="text-xs bg-[#22c55e]/10 text-[#22c55e] border border-[#22c55e]/20 rounded-full px-2 py-1">
                                  {f.label}
                                  <span className="text-gray-500 ml-1">
                                     ({getTypeLabel(f.type)})
