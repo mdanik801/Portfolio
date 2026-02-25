@@ -1,90 +1,10 @@
+// Portfolio Content Update with Networking Skills from CV
+// ------------------------------------------------
+
 import dataanlyticimg from "../../assets/project Image/DATA ANALYTICS.png";
 import ecom from "../../assets/project Image/chepshop.png";
 import qrgenimg from "../../assets/project Image/qrgenimg.png";
 
-export const content = [
-   {
-      title: "DATA ANALYTICS",
-      description:
-         "A QR code generator and scanner is a versatile tool that allows users to create and read QR codes easily. It generates QR codes for URLs, text, or other data, enabling quick sharing and access via smartphones or other devices. The scanner feature decodes QR codes instantly, retrieving embedded information for seamless interaction, making it ideal for marketing, inventory management, and everyday use.",
-      technology: [
-         "HTML",
-         "CSS",
-         "REACT JS",
-         "TALWIND CSS",
-         "REACT-ROUTER-DOM",
-         "QRCODE-REACT",
-         "Html5-QRCode",
-      ],
-      sourcecode: [
-         {
-            livelink: "https://qrgenaretor.netlify.app/",
-            frontend: "https://github.com/mdanik801/qrcodegenaretor",
-            backend: "",
-         },
-      ],
-      content: qrgenimg,
-   },
-   {
-      title: "DATA ANALYTICS",
-      description:
-         "Empower your insights with our data analytics web app, catering to individual users, partnerships, and group accounts. Harness powerful data visualization and analysis tools tailored for diverse needs. Unlock actionable insights seamlessly with our intuitive interface and robust backend, designed to scale with your business. Elevate decision-making with precision and clarity.",
-      technology: ["HTML", "CSS", "REACT JS", "TALWIND CSS"],
-      sourcecode: [
-         {
-            livelink: "https://fastidious-custard-b5f700.netlify.app/",
-            frontend: "https://github.com/mdanik801/DATA-ANALYTICS",
-            backend: "",
-         },
-      ],
-      content: dataanlyticimg,
-   },
-   {
-      title: "E-Commerce",
-      description:
-         "Discover a seamless shopping experience with our affordable e-commerce site. Browse a wide range of products, enjoy unbeatable prices, and benefit from fast, reliable shipping. Our user-friendly platform ensures easy navigation and secure transactions, making shopping simple and enjoyable. Shop now and save on everything you need, all in one convenient place!",
-      technology: ["HTML", "CSS", "REACT JS", "TALWIND CSS", "FIREBASE"],
-      sourcecode: [
-         {
-            livelink: "https://chdaraz.netlify.app/",
-            frontend: "https://github.com/mdanik801/Cheap-Eshop",
-            backend: "",
-         },
-      ],
-      content: ecom,
-   },
-   {
-      title: "ToDo APP",
-      description:
-         "tay organized and boost your productivity with our intuitive to-do app. Easily create, manage, and prioritize tasks with a user-friendly interface. Set reminders, deadlines, and categorize tasks to stay on top of your schedule. Sync across devices for seamless access anytime, anywhere. Achieve your goals efficiently with our powerful, yet simple to-do app!",
-      technology: ["HTML", "CSS", "REACT JS", "TALWIND CSS", "FIREBASE"],
-      sourcecode: [
-         {
-            livelink: "https://elegant-rolypoly-0f55b2.netlify.app/",
-            frontend: "https://github.com/mdanik801/DATA-ANALYTICS",
-            backend: "",
-         },
-      ],
-      content: "https://media.geeksforgeeks.org/wp-content/uploads/20230606125727/gfg.png",
-   },
-   {
-      title: "E-Commerce With HML CSS",
-      description:
-         "Discover a seamless shopping experience with our affordable e-commerce site. Browse a wide range of products, enjoy unbeatable prices, and benefit from fast, reliable shipping. Our user-friendly platform ensures easy navigation and secure transactions, making shopping simple and enjoyable. Shop now and save on everything you need, all in one convenient place!",
-      technology: ["HTML", "CSS"],
-      sourcecode: [
-         {
-            livelink: "https://mdanik801.github.io/Anik-Electronick-site-by-boostrap/",
-            frontend: "https://github.com/mdanik801/Anik-Electronick-site-by-boostrap",
-            backend: "",
-         },
-      ],
-      content:
-         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSlROjEV-8jJD83Rv5Hrr3IKHNN2ON4IsW5g&s",
-   },
-];
-
-// skillls______________________________
 // Icon Import section----------------------------------------------------------
 import htmlicon from "../../assets/skill icons/htmlicon.png";
 import cssicon from "../../assets/skill icons/cssicon.png";
@@ -120,69 +40,212 @@ import emailjs from "../../assets/skill icons/emailjs.png";
 import threejs from "../../assets/skill icons/threejs.png";
 
 // ------------------------------------------------------------------------------------
-export const skillsInfo = [
-   {
-      skillname: "LANGUAGE  : ",
-      skillitem: [
-         { id: 1, name: "HTML", img: htmlicon },
-         { id: 2, name: "JAVASCRIPT", img: jsicon },
-         { id: 3, name: "REACT JS", img: reactcon },
-         { id: 4, name: "PYTHON ", img: pythonicon },
-         { id: 5, name: "C++ ", img: cicon },
-         { id: 6, name: "NODEJS", img: nodejsicon },
-         { id: 7, name: "EXPRESSJS", img: expressicon },
 
-         { id: 9, name: "CSS", img: cssicon },
-         { id: 10, name: "BOOTSTRAP", img: bootstrap },
-         { id: 11, name: "TAILWIND CSS", img: talwindicon },
+export const content = [
+   {
+      title: "QR CODE GENERATOR & SCANNER",
+      description:
+         "A QR code generator and scanner tool that allows users to create and read QR codes easily. Generates QR codes for URLs, text, and data, enabling quick sharing via smartphones. Scanner feature decodes QR codes instantly for seamless interaction.",
+      technology: [
+         "HTML",
+         "CSS",
+         "REACT JS",
+         "TAILWIND CSS",
+         "REACT-ROUTER-DOM",
+         "QRCODE-REACT",
+         "HTML5-QRCODE",
       ],
+      sourcecode: [
+         {
+            livelink: "https://qrgenaretor.netlify.app/",
+            frontend: "https://github.com/mdanik801/qrcodegenaretor",
+            backend: "",
+         },
+      ],
+      content: qrgenimg,
    },
    {
-      skillname: "DATABASE : ",
+      title: "DATA ANALYTICS PLATFORM",
+      description:
+         "A data analytics web app with powerful visualization tools for individual users and groups. Harness actionable insights with an intuitive interface and robust backend, designed to scale with your business. Elevate decision-making with precision and clarity.",
+      technology: ["HTML", "CSS", "REACT JS", "TAILWIND CSS"],
+      sourcecode: [
+         {
+            livelink: "https://fastidious-custard-b5f700.netlify.app/",
+            frontend: "https://github.com/mdanik801/DATA-ANALYTICS",
+            backend: "",
+         },
+      ],
+      content: dataanlyticimg,
+   },
+   {
+      title: "E-COMMERCE PLATFORM",
+      description:
+         "A seamless shopping experience with affordable products, wide range of items, and fast shipping. User-friendly platform with easy navigation and secure transactions. Shop now and save on everything you need!",
+      technology: ["HTML", "CSS", "REACT JS", "TAILWIND CSS", "FIREBASE"],
+      sourcecode: [
+         {
+            livelink: "https://chdaraz.netlify.app/",
+            frontend: "https://github.com/mdanik801/Cheap-Eshop",
+            backend: "",
+         },
+      ],
+      content: ecom,
+   },
+   {
+      title: "TASK MANAGEMENT APP",
+      description:
+         "Stay organized and boost productivity with this intuitive to-do app. Create, manage, and prioritize tasks with reminders, deadlines, and categories. Sync across devices for seamless access anytime, anywhere.",
+      technology: ["HTML", "CSS", "REACT JS", "TAILWIND CSS", "FIREBASE"],
+      sourcecode: [
+         {
+            livelink: "https://elegant-rolypoly-0f55b2.netlify.app/",
+            frontend: "https://github.com/mdanik801/DATA-ANALYTICS",
+            backend: "",
+         },
+      ],
+      content: "https://media.geeksforgeeks.org/wp-content/uploads/20230606125727/gfg.png",
+   },
+   {
+      title: "ELECTRONICS E-COMMERCE (HTML/CSS)",
+      description:
+         "A responsive electronics e-commerce site built with Bootstrap. Features product listings, shopping cart, and clean UI design for an optimal shopping experience.",
+      technology: ["HTML", "CSS", "BOOTSTRAP"],
+      sourcecode: [
+         {
+            livelink: "https://mdanik801.github.io/Anik-Electronick-site-by-boostrap/",
+            frontend: "https://github.com/mdanik801/Anik-Electronick-site-by-boostrap",
+            backend: "",
+         },
+      ],
+      content:
+         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSlROjEV-8jJD83Rv5Hrr3IKHNN2ON4IsW5g&s",
+   },
+];
+
+// ------------------------------------------------------------------------------------
+
+// Helper function for icon URL (since we can't use the URL directly in import)
+const testIconUrl =
+   "https://img.freepik.com/premium-vector/test-icon-vector-design-templates_1172029-3110.jpg";
+
+export const skillsInfo = [
+   // PROGRAMMING LANGUAGES
+   {
+      skillname: "PROGRAMMING LANGUAGES",
+      skillitem: [
+         { id: 1, name: "HTML5", img: htmlicon },
+         { id: 2, name: "CSS3", img: cssicon },
+         { id: 3, name: "JAVASCRIPT (ES6+)", img: jsicon },
+         { id: 4, name: "REACT JS", img: reactcon },
+         { id: 5, name: "PYTHON (Basic)", img: pythonicon },
+         { id: 6, name: "C++", img: cicon },
+         { id: 7, name: "NODE JS", img: nodejsicon },
+         { id: 8, name: "EXPRESS JS", img: expressicon },
+      ],
+   },
+
+   // NETWORKING CORE SKILLS (FROM CV)
+   {
+      skillname: "NETWORKING (CORE)",
+      skillitem: [
+         { id: 1, name: "CCNA", img: testIconUrl },
+         { id: 2, name: "MIKROTIK (MTCNA)", img: testIconUrl },
+         { id: 3, name: "MTCRE", img: testIconUrl },
+         { id: 4, name: "MTCNP", img: testIconUrl },
+         { id: 5, name: "OLT (GPON/EPON)", img: testIconUrl },
+         { id: 6, name: "VLAN/SUBNETTING", img: testIconUrl },
+         { id: 7, name: "ROUTING & SWITCHING", img: testIconUrl },
+         { id: 8, name: "FIREWALL/VPN", img: testIconUrl },
+         { id: 9, name: "LAN/WAN", img: testIconUrl },
+      ],
+   },
+
+   // SECURITY & VOIP
+   {
+      skillname: "SECURITY & VOIP",
+      skillitem: [
+         { id: 1, name: "CCTV/NVR/DVR", img: testIconUrl },
+         { id: 2, name: "IP CAMERA", img: testIconUrl },
+         { id: 3, name: "IP PHONE", img: testIconUrl },
+         { id: 4, name: "PBX & VOIP", img: testIconUrl },
+         { id: 5, name: "REMOTE MONITORING", img: testIconUrl },
+      ],
+   },
+
+   // DATABASES & DEPLOYMENT
+   {
+      skillname: "DATABASES & DEPLOYMENT",
       skillitem: [
          { id: 1, name: "FIREBASE", img: firebaseicon },
-         { id: 2, name: "GITHUB", img: githubicon },
-         { id: 3, name: "NETLIFY ", img: netlifyicon },
-         { id: 4, name: "MONGODB", img: mongodbicon },
-         { id: 5, name: "VERCEL ", img: vercelicon },
+         { id: 2, name: "MONGODB", img: mongodbicon },
+         { id: 3, name: "GITHUB", img: githubicon },
+         { id: 4, name: "NETLIFY", img: netlifyicon },
+         { id: 5, name: "VERCEL", img: vercelicon },
       ],
    },
 
+   // DEVELOPMENT TOOLS
    {
-      skillname: "TOOLS : ",
+      skillname: "DEVELOPMENT TOOLS",
       skillitem: [
-         { id: 1, name: "VSCODE", img: vscodeicon },
+         { id: 1, name: "VS CODE", img: vscodeicon },
          { id: 2, name: "PYCHARM", img: pycharmicon },
-         { id: 3, name: "GITBASH", img: gitbashicon },
-         { id: 4, name: "CODEBLOCK ", img: codeblockicon },
-         { id: 5, name: "POSTMAN ", img: postmanicon },
-         { id: 6, name: "SLACK ", img: slackicon },
+         { id: 3, name: "GIT BASH", img: gitbashicon },
+         { id: 4, name: "CODEBLOCKS", img: codeblockicon },
+         { id: 5, name: "POSTMAN", img: postmanicon },
+         { id: 6, name: "SLACK", img: slackicon },
       ],
    },
+
+   // NETWORKING TOOLS
    {
-      skillname: "UI : ",
+      skillname: "NETWORKING TOOLS",
       skillitem: [
-         { id: 1, name: "METERIAL UI", img: matarialicon },
-         { id: 2, name: "FLOWBITE", img: flowbiteicon },
-         { id: 3, name: "MAMBA UI", img: mambaicon },
-         { id: 4, name: "REACT HOCK FOMR ", img: reacthockform },
-         { id: 5, name: "KEEP REACT UI", img: keepreacticon },
-         { id: 6, name: "ACETERNITY UI", img: Aceternity },
-         { id: 6, name: " THREE JS", img: threejs },
+         { id: 1, name: "WINBOX", img: testIconUrl },
+         { id: 2, name: "PACKET TRACER", img: testIconUrl },
+         { id: 3, name: "VMWARE", img: testIconUrl },
+         { id: 4, name: "WIRESHARK", img: testIconUrl },
       ],
    },
+
+   // UI LIBRARIES & FRAMEWORKS
    {
-      skillname: "OTHERS : ",
+      skillname: "UI LIBRARIES",
+      skillitem: [
+         { id: 1, name: "BOOTSTRAP", img: bootstrap },
+         { id: 2, name: "TAILWIND CSS", img: talwindicon },
+         { id: 3, name: "MATERIAL UI", img: matarialicon },
+         { id: 4, name: "FLOWBITE", img: flowbiteicon },
+         { id: 5, name: "MAMBA UI", img: mambaicon },
+         { id: 6, name: "REACT HOOK FORM", img: reacthockform },
+         { id: 7, name: "KEEP REACT UI", img: keepreacticon },
+         { id: 8, name: "ACETERNITY UI", img: Aceternity },
+         { id: 9, name: "THREE JS", img: threejs },
+      ],
+   },
+
+   // OTHER SKILLS
+   {
+      skillname: "OTHER SKILLS",
       skillitem: [
          { id: 1, name: "PROBLEM SOLVING", img: problem },
          { id: 2, name: "EMAIL JS", img: emailjs },
+         { id: 3, name: "HARDWARE ASSEMBLY", img: testIconUrl },
+         { id: 4, name: "PRINTER REPAIR", img: testIconUrl },
+         { id: 5, name: "LEADERSHIP", img: testIconUrl },
+         { id: 6, name: "COMMUNICATION", img: testIconUrl },
       ],
    },
+
+   // CURRENTLY LEARNING
    {
-      skillname: "LEARING : ",
+      skillname: "CURRENTLY LEARNING",
       skillitem: [
-         { id: 8, name: "VUE JS", img: vuejsicon },
-         { id: 8, name: "DATABASE MANAGMENT", img: dbicon },
+         { id: 1, name: "VUE JS", img: vuejsicon },
+         { id: 2, name: "DATABASE MANAGEMENT", img: dbicon },
+         { id: 3, name: "ADVANCED MIKROTIK", img: testIconUrl },
+         { id: 4, name: "FTTH SOLUTIONS", img: testIconUrl },
       ],
    },
 ];

@@ -83,8 +83,8 @@ function FileUploadField({ value, onChange }) {
          img.onload = () => {
             const canvas = document.createElement("canvas");
             const MAX = 800;
-            let w = img.width;
-            let h = img.height;
+            let w = img.width,
+               h = img.height;
             if (w > h && w > MAX) {
                h = (h * MAX) / w;
                w = MAX;
@@ -108,7 +108,6 @@ function FileUploadField({ value, onChange }) {
       setDragging(false);
       processFile(e.dataTransfer.files[0]);
    };
-
    const handlePaste = (e) => {
       const item = Array.from(e.clipboardData.items).find((i) => i.type.startsWith("image/"));
       if (item) processFile(item.getAsFile());
@@ -242,7 +241,11 @@ export default function UploadPage() {
 
       const payload = {
          category: category_id,
-         customData: fieldValues,
+         customData: {
+            // ✅ Category name automatically save হবে
+            _categoryName: selectedCategory?.name || "",
+            ...fieldValues,
+         },
       };
 
       try {
@@ -262,13 +265,15 @@ export default function UploadPage() {
    return (
       <div className="max-w-4xl mx-auto mt-10 px-4 pb-20">
          <h2 className="text-3xl font-bold mb-6 text-center">
-            <span className="text-[#22c55e]">{editingId ? "Update" : "Create New"}</span> Project
+            <span className="text-[#22c55e]">{editingId ? "Update" : "Create New"}</span>{" "}
+            {selectedCategory?.name || "Project"}
          </h2>
          <form
             onSubmit={handleSubmit}
             className="bg-[#161b22]/70 backdrop-blur-md border border-white/5 rounded-2xl p-8 shadow-2xl border-t-4 border-[#22c55e] space-y-6">
+            {/* Category Select */}
             <div>
-               <label className="block text-gray-400 mb-2">Project Category *</label>
+               <label className="block text-gray-400 mb-2">Category *</label>
                <select
                   value={category_id}
                   onChange={handleCategoryChange}
@@ -281,6 +286,16 @@ export default function UploadPage() {
                   ))}
                </select>
             </div>
+
+            {/* Selected Category Badge */}
+            {selectedCategory && (
+               <div className="flex items-center gap-2">
+                  <span className="text-xs text-gray-500">Saving as:</span>
+                  <span className="px-3 py-1 bg-[#22c55e]/20 text-[#22c55e] rounded-full text-xs font-semibold border border-[#22c55e]/30">
+                     {selectedCategory.name}
+                  </span>
+               </div>
+            )}
 
             {!category_id && (
                <div className="text-center text-gray-500 py-10">
@@ -324,7 +339,9 @@ export default function UploadPage() {
                   <button
                      type="submit"
                      className="px-8 py-2.5 rounded-lg bg-[#22c55e] text-black font-bold hover:bg-white transition shadow-lg">
-                     {editingId ? "Update Project" : "Submit Project"}
+                     {editingId
+                        ? `Update ${selectedCategory?.name}`
+                        : `Submit ${selectedCategory?.name}`}
                   </button>
                </div>
             )}
